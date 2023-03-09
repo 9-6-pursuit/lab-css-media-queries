@@ -174,7 +174,6 @@ footer a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (max-width: 767px){
 header {
   grid-template-columns: 1fr;
@@ -187,13 +186,10 @@ footer{
 padding: 25px 25px 25px 25px;
 text-align: center;
 }
-footer > ul{
+footer ul{
   list-style: none;
 }
-footer > h4 {
-  border-bottom: 0;
+footer h4 {
+  border-bottom: none;
 }
-
 }
-
-
