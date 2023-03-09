@@ -163,3 +163,77 @@ footer a:hover {
 }
 
 /* Media queries */
+/* media query */
+@media screen and ((min-width: 768px) and (max-width: 1279px)){
+  /*this code is say: anything between 768px & 1279px get the following modifications:*/
+  
+   .splash {
+      display: none;
+  } 
+  
+  /*this will remove the splash class that reads: "your place for tech new!"*/
+
+    main {
+      width: 90%;
+   }
+
+    footer {
+      grid-template-columns: 50% 50%;
+      /* challenge: try to do this without grid-template-columns
+    makes the grid components even*/
+  }
+}
+
+  @media screen and (max-width: 767.99px)  {
+    .splash {
+      display: none;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    } 
+    
+    /* REMEMBER to center flex-box items we use jutify-content with value 'center' shown above ^^^ text-align or display properties will not work*
+
+    helpful resource: https://ishadeed.com/article/learn-css-centering/#:~:text=To%20center%20an%20inline%20element,is%20text%2Dalign%3A%20center%20.&text=For%20multiple%20inline%20elements%2C%20the,using%20text%2Dalign%3A%20center%20.
+    */
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      /* I literally just copied and pasted the code above and it works - I think I am in love with flexbox <3 <3 <3 */
+      gap: 50px 0px;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      grid-template-columns: 50% 50%;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer h4 {
+      border: none;
+    }
+  }
+
+  /*notes (for future reference/real-world): sometimes the pages have default styling we can remove these by doing for following code:
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+ //keep in mind this doesn't take up of the space across the page, we can use a flex box so that our items distribute across the page evenly - remember the default border box is to the left-side
+
+//if we want to use flex boX we do so by accessing the parent element for the top three columns (About, Our Proces, Contact Us), which in this case is the is header tag/element; 
+
+        ***sidenote: a containter(class) can also a parent element.
+
+ */
