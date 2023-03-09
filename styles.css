@@ -166,9 +166,12 @@ footer a:hover {
 /* media query */
 @media screen and ((min-width: 768px) and (max-width: 1279px)){
   /*this code is say: anything between 768px & 1279px get the following modifications:*/
+  
    .splash {
       display: none;
-  } /*this will remove the splash class that reads: "your place for tech new!"*/
+  } 
+  
+  /*this will remove the splash class that reads: "your place for tech new!"*/
 
     main {
       width: 90%;
@@ -176,7 +179,7 @@ footer a:hover {
 
     footer {
       grid-template-columns: 50% 50%;
-    /* challenge: try to do this without grid-template-columns
+      /* challenge: try to do this without grid-template-columns
     makes the grid components even*/
   }
 }
@@ -185,11 +188,14 @@ footer a:hover {
     .splash {
       display: none;
     }
+
     header {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-    } /* REMEMBER to center flex-box items we use jutify-content with value 'center' shown above ^^^ text-align or display properties will not work*
+    } 
+    
+    /* REMEMBER to center flex-box items we use jutify-content with value 'center' shown above ^^^ text-align or display properties will not work*
 
     helpful resource: https://ishadeed.com/article/learn-css-centering/#:~:text=To%20center%20an%20inline%20element,is%20text%2Dalign%3A%20center%20.&text=For%20multiple%20inline%20elements%2C%20the,using%20text%2Dalign%3A%20center%20.
     */
@@ -200,7 +206,6 @@ footer a:hover {
       justify-content: center;
       /* I literally just copied and pasted the code above and it works - I think I am in love with flexbox <3 <3 <3 */
       gap: 50px 0px;
-
     }
 
     footer {
@@ -211,7 +216,6 @@ footer a:hover {
 
     footer ul {
       list-style: none;
-
     }
 
     footer h4 {
