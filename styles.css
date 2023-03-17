@@ -38,7 +38,8 @@ header {
   text-align: center;
 
   display: grid;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: 100%;
+  /* grid-template-columns: 250px 1fr; */
 }
 
 header h1 {
@@ -91,10 +92,12 @@ nav a:hover {
 main {
   margin: 3rem auto;
 
-  width: 70%;
+  width: 90%;
 
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 50%;
+
+  /* grid-template-columns: repeat(2, 1fr); */
   gap: 1rem 3rem;
 }
 
@@ -130,10 +133,13 @@ aside a:hover {
 footer {
   background: #040f16;
   color: #ececec;
-  padding: 50px 15% 25px;
+padding: 25px;
 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+display: grid;
+
+  padding:  50px 15% 25px;
+ display: grid;
+  grid-template-columns: repeat(3, 1fr); 
 }
 
 footer h4 {
@@ -141,6 +147,8 @@ footer h4 {
   margin: 0;
   max-width: 250px;
   padding-bottom: 5px;
+
+
 }
 
 footer ul {
@@ -163,3 +171,25 @@ footer a:hover {
 }
 
 /* Media queries */
+
+@media((min-width: 768px) and (max-width: 1279px)){
+  .splash{
+    display: none;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+    border-bottom: none;
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+  }
+  footer ul {
+    list-style: none;
+
+  }
+
+}
+
+
+
