@@ -163,3 +163,47 @@ footer a:hover {
 }
 
 /* Media queries */
+
+@media((min-width:768px) and (max-width:1279px)){
+  .splash{
+    display: none;
+  }
+  main{
+    width: 90%;
+  }
+
+  footer {
+    background: #040f16;
+    color: #ececec;
+    padding: 50px 15% 25px;
+  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+ 
+}
+
+@media(max-width: 768px){
+  header{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  main{
+    gap: 50px 0;
+    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-row-gap: 50px;
+  }
+  footer{
+    padding: 25px;
+    text-align: center;
+  }
+  footer ul{
+    list-style: none;
+
+  }
+  footer h4{
+
+  }
+}
